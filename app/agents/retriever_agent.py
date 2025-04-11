@@ -1,12 +1,13 @@
-# app/agents/retriever_agent.py
 from crewai import Agent
+from langchain_openai import ChatOpenAI
+from app.tools.gatsby_retriever_tool import GatsbyRetrieverTool
 
 def create_retriever_agent():
     return Agent(
-        name="Retriever Agent",
-        role="Semantic Search Expert",
-        goal="Find relevant context from the Gatsby vector DB",
-        backstory="An expert literary researcher who understands semantic search and book structure.",
-        tools=[],  # Not using CrewAI tools
+        role="Book Researcher",
+        goal="Find passages from The Great Gatsby relevant to any literary question.",
+        backstory="An AI literary detective with deep knowledge of Gatsby.",
+        tools=[GatsbyRetrieverTool()],
+        llm=ChatOpenAI(model="gpt-4-0613", temperature=0),
         verbose=True
     )
