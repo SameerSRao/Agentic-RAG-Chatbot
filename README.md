@@ -32,9 +32,7 @@ Agentic-RAG-Chatbot/
 ├── README.md                # (You are here)
 ```
 ---
-## Architecture Overview
-
-### High-Level Flow
+## High-Level Flow
 
 ```text
 [User Query]
