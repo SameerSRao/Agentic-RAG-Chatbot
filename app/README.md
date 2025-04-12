@@ -1,8 +1,7 @@
-# Tools Module
-This module contains reusable tools that agents use to perform specific tasks in the RAG pipeline. Each tool wraps a function or service (like Qdrant or DeepEval) in a standard format, making it easy for agents to call them. This keeps agent logic clean and allows tools to be reused or extended easily.
+# App Module
+The App module contains the core logic and structure of the project. It brings together agents, tools, tasks, and the execution pipeline. This module defines how different components interact, making the RAG chatbot system modular, organized, and easy to extend or modify.
 
 ## Design Philosophy
-
 - Each major component of the system (agents, tools, embeddings, and pipeline logic) is modularized to encourage code reuse and make reasoning about behavior easier.
 - Tasks are structured such that outputs from one agent (retriever) become the working context for another (generator, evaluator).
 - New tasks, tools, and agents can be added easily without modifying existing modules. This supports ongoing experimentation and system improvement.
