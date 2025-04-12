@@ -17,7 +17,7 @@ Contains:
 Each agent is configured with:
 - A **goal** and **backstory**
 - A set of **tools**
-- An LLM (usually `ChatOpenAI`)
+- An LLM (`ChatOpenAI`)
 - `verbose=True` for clear tracing during runs
 
 ---
