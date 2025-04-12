@@ -1,6 +1,6 @@
 # Tools Module
 
-This directory contains modular tool implementations used by agents in the Agentic RAG Chatbot system. Each tool encapsulates a callable capability that extends an agent's ability to interact with external systems or apply specific evaluation logic.
+This module contains modular tool implementations used by agents in the Agentic RAG Chatbot system. Each tool encapsulates a callable capability that extends an agent's ability to interact with external systems or apply specific evaluation logic.
 
 Tools in CrewAI are autonomous and can be invoked by agents during planning and execution. They allow agents to remain stateless while leveraging well-defined functional capabilities.
 
