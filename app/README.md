@@ -1,3 +1,6 @@
+# Tools Module
+This module contains reusable tools that agents use to perform specific tasks in the RAG pipeline. Each tool wraps a function or service (like Qdrant or DeepEval) in a standard format, making it easy for agents to call them. This keeps agent logic clean and allows tools to be reused or extended easily.
+
 ## Design Philosophy
 
 - Each major component of the system (agents, tools, embeddings, and pipeline logic) is modularized to encourage code reuse and make reasoning about behavior easier.
