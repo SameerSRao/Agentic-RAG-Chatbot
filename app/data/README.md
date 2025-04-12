@@ -1,4 +1,4 @@
-# app/data
+# Data
 
 This directory contains all static data assets used by the Agentic RAG Chatbot system. These assets are used during the retrieval and evaluation processes.
 
