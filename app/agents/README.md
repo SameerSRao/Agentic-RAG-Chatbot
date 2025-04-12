@@ -7,12 +7,13 @@ These agents form the foundation of the agentic pipeline, handling information r
 ---
 
 ## Agents Overview
+| Agent           | Role               | Tool(s) Used          | Description                                               |
+|----------------|--------------------|------------------------|-----------------------------------------------------------|
+| RetrieverAgent | Book Researcher     | `GatsbyRetrieverTool` | Fetches relevant context from Qdrant vector database      |
+| GeneratorAgent | Literary Analyst    | (no tool)              | Uses context to generate a grounded, well-written answer  |
+| EvaluatorAgent | Answer Evaluator    | `DeepEvalTool`        | Evaluates the answer using DeepEval metrics               |
 
-| File                   | Agent Role        | Description                                                                 |
-|------------------------|-------------------|-----------------------------------------------------------------------------|
-| `retriever_agent.py`   | Book Researcher   | Retrieves relevant passages from *The Great Gatsby* using semantic search. |
-| `generator_agent.py`   | Literary Analyst  | Synthesizes a well-structured answer based on retrieved passages.          |
-| `evaluator_agent.py`   | Answer Evaluator  | Evaluates the generated answer using DeepEval's scoring framework.         |
+
 
 ---
 
