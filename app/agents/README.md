@@ -1,6 +1,6 @@
-# Agents
+# Agents Module
 
-This directory defines the autonomous agents in the Agentic RAG Chatbot system. Each agent is implemented using the CrewAI `Agent` class and encapsulates a distinct role, goal, backstory, and optional toolset.
+This module defines the autonomous agents in the Agentic RAG Chatbot system. Each agent is implemented using the CrewAI `Agent` class and encapsulates a distinct role, goal, backstory, and optional toolset.
 
 These agents form the foundation of the agentic pipeline, handling information retrieval, grounded answer generation, and evaluation. All agents are designed to be modular and reusable within different Crew configurations.
 
