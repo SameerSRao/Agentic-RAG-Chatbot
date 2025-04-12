@@ -1,0 +1,9 @@
+openai
+crewai
+langchain
+langchain-openai
+deepeval
+qdrant-client
+pydantic
+tqdm
+chonkie
