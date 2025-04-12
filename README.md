@@ -16,6 +16,22 @@ A modular, agent-based Retrieval-Augmented Generation (RAG) system that answers 
 - Ensure **modularity** with reusable tools, agents, and pipeline logic.
 
 ---
+## Folder Structure
+```
+Agentic-RAG-Chatbot/
+├── app/
+│   ├── agents/              # Agent definitions (retriever, generator, evaluator)
+│   ├── data/                # Source documents (e.g., The Great Gatsby)
+│   ├── embeddings/          # Vector store utilities using Qdrant
+│   ├── tools/               # Custom tools for retrieval and DeepEval
+│   ├── pipeline.py          # Orchestrates the full multi-agent RAG pipeline
+│   └── tasks.py             # Defines how tasks are passed between agents
+│
+├── main.py                  # Entry point to run the system interactively
+├── requirements.txt         # Python dependencies
+├── README.md                # (You are here)
+```
+---
 ## Architecture Overview
 
 ### High-Level Flow
