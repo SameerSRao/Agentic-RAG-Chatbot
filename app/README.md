@@ -1,8 +1,8 @@
 ## Design Philosophy
 
-- **Separation of Concerns**: Each major component of the system (agents, tools, embeddings, and pipeline logic) is modularized to encourage code reuse and make reasoning about behavior easier.
-- **Agent Collaboration**: Tasks are structured such that outputs from one agent (retriever) become the working context for another (generator, evaluator).
-- **Extensibility**: New tasks, tools, and agents can be added easily without modifying existing modules. This supports ongoing experimentation and system improvement.
+- Each major component of the system (agents, tools, embeddings, and pipeline logic) is modularized to encourage code reuse and make reasoning about behavior easier.
+- Tasks are structured such that outputs from one agent (retriever) become the working context for another (generator, evaluator).
+- New tasks, tools, and agents can be added easily without modifying existing modules. This supports ongoing experimentation and system improvement.
 
 ---
 
