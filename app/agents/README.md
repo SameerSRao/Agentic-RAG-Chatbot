@@ -6,7 +6,7 @@ These agents form the foundation of the agentic pipeline, handling information r
 
 ---
 
-## 📁 Agents Overview
+## Agents Overview
 
 | File                   | Agent Role        | Description                                                                 |
 |------------------------|-------------------|-----------------------------------------------------------------------------|
