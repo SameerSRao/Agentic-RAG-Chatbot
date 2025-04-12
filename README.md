@@ -1,0 +1,1 @@
+Agentic RAG Chatbot is a Retrieval-Augmented Generation (RAG) system powered by CrewAI agents. It uses LLMs, vector databases, and automated evaluation to answer nuanced literary questions about The Great Gatsby.
