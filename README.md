@@ -53,5 +53,8 @@ Agentic-RAG-Chatbot/
 [Final Output]
      └── includes: Answer and Evaluation Scores
 ```
+## Screenshots
+<img width="1470" alt="Screenshot 2025-04-12 at 3 31 40 PM" src="https://github.com/user-attachments/assets/cadd2860-1582-40d1-b745-9190dfa47131" />
+<img width="1470" alt="Screenshot 2025-04-12 at 3 33 25 PM" src="https://github.com/user-attachments/assets/3fa16fc7-33e6-4586-97b8-cea708840ea1" />
 
 
