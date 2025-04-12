@@ -1,4 +1,4 @@
-# Tools
+# Tools Module
 
 This directory contains modular tool implementations used by agents in the Agentic RAG Chatbot system. Each tool encapsulates a callable capability that extends an agent's ability to interact with external systems or apply specific evaluation logic.
 
