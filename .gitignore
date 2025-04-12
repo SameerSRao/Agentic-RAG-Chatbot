@@ -4,3 +4,4 @@ venv/
 .env
 qdrant*
 vectorstore_ready.flag
+.deepeval_telemetry.txt

@@ -10,9 +10,14 @@ if __name__ == "__main__":
             f.write("ok")
 
     while True:
+        print("\n===== Input =====")
         query = input("Ask a question about the Great Gatsby: ")
         result = run_pipeline(query)
 
-        print("\n--- Answer ---")
-        print(result)
+        print("\n===== Generated Answer =====")
+        print(result['answer'].raw)
+        print()
+
+        print("\n===== Evaluation =====")
+        print(result["evaluation"].raw)
         print()
