@@ -50,7 +50,7 @@ class DeepEvalTool(BaseTool):
         metric_names = [
             'Answer Relevancy',
             'Faithfulness',
-            'Contextual Precision'
+            'Contextual Precision',
             'Contextual Recall',
             'Contextual Relevancy'
         ]

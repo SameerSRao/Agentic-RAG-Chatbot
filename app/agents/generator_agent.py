@@ -8,6 +8,5 @@ def create_generator_agent():
         goal="Answer questions based on Gatsby's text with insight and clarity.",
         backstory="A thoughtful AI with a background in literature and analysis.",
         tools=[],
-        llm=ChatOpenAI(model="gpt-4-0613", temperature=0),
         verbose=True
     )
