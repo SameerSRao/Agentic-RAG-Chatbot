@@ -5,7 +5,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
 import uuid
 
-
+#chunks and embeds data source, populates vector db, searches db for relevant chunks
 class VectorStoreUtil:
     def __init__(self, collection_name='rag_chunks', embedding_dimension=384):
         self.collection_name=collection_name
@@ -39,8 +39,6 @@ class VectorStoreUtil:
             points.append(PointStruct(id=str(uuid.uuid4()), vector=vec, payload={"text":chunk}))
         self.recreate_collection()
         self.client.upsert(collection_name=self.collection_name, points=points)
-        print(f"Stored {len(points)} chunks to Qdrant.")
-
 
     def search(self, query, top_k=5):
         query_vector = self.model.encode([query])[0].tolist()

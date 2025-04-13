@@ -4,6 +4,7 @@ from app.agents.generator_agent import create_generator_agent
 from app.agents.evaluator_agent import create_evaluator_agent
 from app.tasks import create_tasks
 
+#creates crewai pipeline, initializes agents, runs crew, returns answer and evaluation based on query
 def run_pipeline(query: str):
     retriever = create_retriever_agent()
     generator = create_generator_agent()
@@ -22,6 +23,5 @@ def run_pipeline(query: str):
 
     return {
         "answer": generation_task.output,
-        "context": retrieval_task.output,
         "evaluation": evaluation_task.output
     }

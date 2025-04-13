@@ -1,5 +1,6 @@
 from crewai import Task
 
+#retreival, generation, and evaluation tasks for crewai
 def create_tasks(retriever, generator, evaluator, query):
     retrieval_task = Task(
         description=f"Use the GatsbyRetriever tool to search for passages relevant to this question: '{query}'",

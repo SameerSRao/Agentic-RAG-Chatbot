@@ -2,6 +2,7 @@ from crewai import Agent
 from langchain_openai import ChatOpenAI
 from app.tools.gatsby_retriever_tool import GatsbyRetrieverTool
 
+#creates retreiver agent: finds relevant chunks from Qdrant based on query
 def create_retriever_agent():
     return Agent(
         role="Book Researcher",

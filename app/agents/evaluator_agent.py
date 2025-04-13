@@ -2,6 +2,7 @@ from crewai import Agent
 from langchain_openai import ChatOpenAI
 from app.tools.deepeval_tool import DeepEvalTool
 
+#creates evaluator agent: evaluates generated answer with DeepEval
 def create_evaluator_agent():
     return Agent(
         role="Answer Evaluator",

@@ -1,6 +1,7 @@
 from crewai import Agent
 from langchain_openai import ChatOpenAI
 
+#creates generator agent: generates answer based on context from retreiver agent
 def create_generator_agent():
     return Agent(
         role="Literary Analyst",

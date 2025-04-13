@@ -3,9 +3,11 @@ from pydantic import BaseModel, Field
 from typing import Type
 from app.embeddings.vectorstore import VectorStoreUtil
 
+#input for GatsbyRetreiverTool
 class RetrievalInput(BaseModel):
     query: str = Field(..., description="The question to search in the Gatsby vector database.")
 
+#tool for searching Qdrant db for relevant chunks
 class GatsbyRetrieverTool(BaseTool):
     name: str = "gatsby_retriever"
     description: str = "Retrieves the most relevant passages from the Gatsby vector DB."
