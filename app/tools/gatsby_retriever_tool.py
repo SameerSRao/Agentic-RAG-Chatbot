@@ -13,6 +13,7 @@ class GatsbyRetrieverTool(BaseTool):
     description: str = "Retrieves the most relevant passages from the Gatsby vector DB."
     args_schema: Type[BaseModel] = RetrievalInput
 
+    #change collection_name to match input document
     def _run(self, query: str) -> str:
-        vs = VectorStoreUtil(collection_name="gatsby_rag")
+        vs = VectorStoreUtil(collection_name="coffee-rag")
         return "\n".join(vs.search(query, top_k=5))

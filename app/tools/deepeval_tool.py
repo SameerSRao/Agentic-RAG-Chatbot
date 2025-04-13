@@ -9,7 +9,7 @@ from langchain_openai import ChatOpenAI
 def generate_baseline(query: str) -> str:
     llm = ChatOpenAI(model="gpt-4-0613", temperature=0)
     prompt = (
-        f"Please provide the ideal, best answer to the following question based on The Great Gatsby:\n"
+        f"Please provide the ideal, best answer to the following question based on input document:\n"
         f"Question: {query}\n"
         "Answer in a clear and concise paragraph."
     )
