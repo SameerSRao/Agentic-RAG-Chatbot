@@ -23,7 +23,6 @@ Each tool extends the CrewAI `BaseTool` class and includes:
 - **`description`**: What the tool does, used by the CrewAI planner to reason about tool selection.
 - **`args_schema`**: A `pydantic` model that defines the expected input fields.
 - **`_run()`**: The core method containing the tool’s execution logic.
-- (Optional) **`_arun()`**: Placeholder for asynchronous usage (currently not implemented in this project).
 
 ---
 
