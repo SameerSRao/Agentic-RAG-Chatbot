@@ -7,3 +7,4 @@ qdrant-client
 pydantic
 tqdm
 chonkie
+sentence_transformers

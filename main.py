@@ -5,6 +5,7 @@ import os
 if __name__ == "__main__":
     vs = VectorStoreUtil(collection_name="gatsby_rag")
     if not os.path.exists("vectorstore_ready.flag"):
+        print('Reading Documents...')
         vs.chunk_embed_store("app/data/docs/great_gatsby.txt")
         with open("vectorstore_ready.flag", "w") as f:
             f.write("ok")
