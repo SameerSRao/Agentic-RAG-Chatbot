@@ -12,9 +12,7 @@ class VectorStoreUtil:
         self.chunker = SentenceChunker(
             tokenizer_or_token_counter="gpt2",  
             chunk_size=512,                     
-            # chunk_size=256,
             chunk_overlap=128,                
-            # chunk_overlap=0,
             min_sentences_per_chunk=1       
         )
         self.model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -52,13 +50,3 @@ class VectorStoreUtil:
             limit=top_k
         )
         return [point.payload["text"] for point in results]
-
-if __name__ == "__main__":
-    vs = VectorStoreUtil(collection_name='test_collection')
-    vs.chunk_embed_store('app/data/docs/great_gatsby.txt')
-    query = "What is Nick's last name"
-    results = vs.search(query, top_k=3)
-
-    print("\nTop matching chunks:")
-    for i, chunk in enumerate(results):
-        print(f"\n--- Chunk {i+1} ---\n{chunk}")
