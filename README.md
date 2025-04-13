@@ -53,8 +53,45 @@ Agentic-RAG-Chatbot/
 [Final Output]
      └── includes: Answer and Evaluation Scores
 ```
+---
+
 ## Screenshots
 <img width="1470" alt="Screenshot 2025-04-12 at 3 31 40 PM" src="https://github.com/user-attachments/assets/cadd2860-1582-40d1-b745-9190dfa47131" />
 <img width="1470" alt="Screenshot 2025-04-12 at 3 33 25 PM" src="https://github.com/user-attachments/assets/3fa16fc7-33e6-4586-97b8-cea708840ea1" />
 
+---
+## Getting Started
+Follow these steps to set up the Agentic-RAG-Chatbot locally.
 
+### Prerequisites
+Make sure you have the following installed:
+```
+- Python 3.9+
+- pip
+- Docker (for Qdrant)
+- Git
+```
+### Clone the Repository
+```bash
+git clone https://github.com/SameerSRao/Agentic-RAG-Chatbot.git
+cd Agentic-RAG-Chatbot
+```
+### Set Up Environment 
+Using virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+### Configure Environment Variables
+```bash
+cp .env.example .env
+```
+### Start Qdrant
+```bash
+docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+```
+### Run App
+```bash
+python main.py
+```
