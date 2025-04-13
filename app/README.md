@@ -13,13 +13,12 @@ The App module contains the core logic and structure of the project. It brings t
 ### `agents/`
 Contains:
 - `retriever_agent.py`: Uses a Qdrant-based tool to extract relevant text.
-- `generator_agent.py`: Uses a GPT-4 LLM to generate grounded answers from context.
+- `generator_agent.py`: Uses retrieved context to generate answers to query.
 - `evaluator_agent.py`: Uses DeepEvalTool to score generated answers.
 
 Each agent is configured with:
 - A **goal** and **backstory**
 - A set of **tools**
-- An LLM (`ChatOpenAI`)
 - `verbose=True` for clear tracing during runs
 
 ---
