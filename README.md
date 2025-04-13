@@ -55,7 +55,7 @@ Agentic-RAG-Chatbot/
 ```
 ---
 
-## Sample Interaction
+## Sample Output
 <img width="1150" alt="Screenshot 2025-04-12 at 11 32 24 PM" src="https://github.com/user-attachments/assets/a2307c07-1869-4678-ad54-ed527d8c216c" />
 
 ---
