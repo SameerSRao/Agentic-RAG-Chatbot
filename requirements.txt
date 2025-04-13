@@ -8,3 +8,4 @@ pydantic
 tqdm
 chonkie
 sentence_transformers
+google.genai
