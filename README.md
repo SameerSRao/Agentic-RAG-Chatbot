@@ -89,6 +89,7 @@ cp .env.example .env
 ```
 ### Start Qdrant
 ```bash
+docker pull qdrant/qdrant  #install qdrant if not installed locally
 docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
 ```
 ### Run App
