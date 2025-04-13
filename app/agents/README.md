@@ -31,7 +31,6 @@ The agents communicate via CrewAI’s internal task orchestration mechanism and 
 
 ## Implementation Strategy
 
-- All agents use the `ChatOpenAI` LLM from the `langchain_openai` module with deterministic settings (temperature = 0) to ensure consistent behavior.
 - Agents that require tools (e.g., `GatsbyRetrieverTool`, `DeepEvalTool`) import and register them for use in CrewAI’s action planner.
 - Each agent is designed to be easily extended or swapped with alternate toolsets or LLM configurations.
 
