@@ -29,12 +29,7 @@ class DeepEvalTool(BaseTool):
 
     def _run(self, query: str, answer: str, context: str = "") -> str:
         expected_output = generate_baseline(query)
-
-        print('Deep Eval Inputs')
-        print(query)
-        print(answer)
-        print(context)
-
+        
         test_case = LLMTestCase(
             input=query,
             actual_output=answer,
