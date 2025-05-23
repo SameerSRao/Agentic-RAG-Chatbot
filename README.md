@@ -1,4 +1,4 @@
-# Agentic RAG Chatbot
+# Gatsby Agentic RAG Chatbot
 
 A modular, agent-based Retrieval-Augmented Generation (RAG) system that answers questions about *The Great Gatsby* using the CrewAI framework, integrated with DeepEval for answer evaluation. This system demonstrates thoughtful architectural design, tool use, and autonomous reasoning across a multi-step pipeline.
 
